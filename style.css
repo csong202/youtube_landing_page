@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 16px;
+    /* background: #f9f9f9; */
+}
+body {
+    font-family: 'Roboto'
+}
+hr {
+    height: 1px;
+    border: none;
+    background: #e5e5e5;
+}
+
+.material-icons {
+    color: #606060;
+    margin-right: 12.5px;
+}
+.material-icons:hover {
+    cursor: pointer;
+}
+
+/* ----MENU BAR---- */
+.menu-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 50px;
+    padding: 15px;
+    background: white;
+    border-bottom: 1px solid #ffffff;
+}
+.menu-bar .logo {
+    display: flex;
+    align-items: inherit;
+}
+.menu-bar .logo img {
+    width: 80px;
+}
+.menu-bar .search form {
+    height: 30px;
+    border: 1px solid #dddddd;
+    display: flex;
+}
+.menu-bar .search form input {
+    border: none;
+    width: 500px;
+    height: 100%;
+    padding: 0 4px;
+}
+.menu-bar .search form button {
+    border: none;
+    height: 100%;
+    width: 65px;
+}
+
+/* ----MAIN BODY---- */
+/* CATEGORIES */
+.main-body {
+    height: clac(100vh - 50px);
+    display: flex;
+    overflow: hidden;
+}
+.categories {
+    height: 100%;
+    width: 240px;
+    overflow-y: scroll;
+}
+.categories .categories-section {
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+.categories .categories-section .category {
+    display: flex;
+    align-items: center;
+    height: 40px;
+    font-size: 14px;
+    padding: 15px; 
+}
+.categories .categories-section .category:hover {
+    background: #f9f9f9;
+    cursor: pointer;  
+}
+/* .categories .categories-section .category span {
+    display: inline-block;
+    height: 100%
+} */
+.categories .categories-section .category .active {
+    color: red;
+}
+.categories .categories-section .span-active {
+    background: #e5e5e5;
+}
+
+/* VIDEOS */
+.videos {
+    height: 100%;
+    width: calc(100vw - 240px);
+    background: #f9f9f9;
+    overflow-y: scroll;
+    padding: 10px;
+    display: flex;
+    flex-wrap: wrap;
+}
+.videos .video {
+    width: calc(25% - 10px);
+    margin-right: 10px;
+    margin-top: 20px;
+}
+.video .thumbnail {
+    height: 170px;
+    width:100%; 
+    margin-right: 10px;
+}
+.video .thumbnail img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+.info {
+    display: flex;
+    margin-top: 5px;
+}
+.vid-details {
+    display: flex;
+    flex-direction: column;
+}
+.vid-details h3{
+    font-size: 14px;
+}
+.vid-details .account-name {
+    font-size: 14px;
+    color: rgb(96,96,96)
+    font-weight: 400;
+}
